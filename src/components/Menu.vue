@@ -16,7 +16,7 @@
   >
     <Slide v-for="slide in 3" :key="slide">
       <div class="carousel__item" @click="slideTo(slide - 1)" style="background-color: black;">
-        <img :src="`src/assets/menu/${slide}.jpg`" alt="slide image">
+        <img :src="`images/${slide}.jpg`" alt="slide image">
       </div>
     </Slide>
   </Carousel>

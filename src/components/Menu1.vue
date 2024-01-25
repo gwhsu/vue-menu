@@ -2,7 +2,7 @@
   <Carousel :itemsToShow="3.95" :wrapAround="true" :transition="500">
     <Slide v-for="imageIndex in 3" :key="imageIndex">
       <div class="carousel__item">
-        <img :src="`src/assets/menu/${imageIndex}.jpg`" alt="slide image" class="menu-image">
+        <img :src="`/images/${imageIndex}.jpg`" alt="slide image" class="menu-image">
       </div>
     </Slide>
   </Carousel>
@@ -29,9 +29,9 @@ export default defineComponent({
 }
 
 .menu-image {
-  max-width: 100%;  /* 图片最大宽度为容器宽度 */
-  max-height: 100%; /* 图片最大高度为容器高度 */
-  object-fit: contain; /* 保持图片宽高比，完整显示在容器内 */
+  max-width: 100%;  
+  max-height: 100%; 
+  object-fit: contain; 
 }
 
 .carousel__viewport {
